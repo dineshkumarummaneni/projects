@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body style="background-color: rgb(246, 92, 92);">
+    <center>
+       <h1 style="font-size: 3vw; letter-spacing: 0.5vh;">Smart Pay </h1><br>
+       <h1 style="font-size: 4vw; color: aliceblue; letter-spacing: 0.5vh;">Verification Code</h1> <br>
+       <div style="color: aliceblue; letter-spacing: 1vh;">Enter the OTP Sent To The Mobile Number <span>  </span></div><br><br>
+       <div style="display: flex; margin-left: 30vw; ">
+       <input type="text" style=" width: 10vw; height: 10vh; border-radius: 100px; font-size: 10vh; margin-left: 1vh; text-align: center;">
+       <input type="text" style=" width: 10vw; height: 10vh; border-radius: 100px; font-size: 10vh;margin-left: 1vh;text-align: center;">
+       <input type="text" style=" width: 10vw; height: 10vh; border-radius: 100px; font-size: 10vh;margin-left: 1vh;text-align: center;">
+       <input type="text" style=" width: 10vw; height: 10vh; border-radius: 100px; font-size: 10vh;margin-left: 1vh;text-align: center;">
+       
+       </div>
+      
+    </center>
+<br>
+    <div style="padding-top: 5vh;">
+        <center>
+            <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px;  color: aliceblue;cursor:pointer;" onclick="otp(1)">1</button>
+            <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px; padding-left: 20vh; color: aliceblue;cursor:pointer;" onclick="otp(2)">2</button>
+            <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px; padding-left: 20vh; color: aliceblue;cursor:pointer;"onclick="otp(3)">3</button>
+
+        </center>
+        <center style="padding-top: 2vh;">
+            <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px;  color: aliceblue;cursor:pointer;" onclick="otp(4)" onclick="otp(4)">4</button>
+            <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px; padding-left: 20vh; color: aliceblue;cursor:pointer;"onclick="otp(5)">5</button>
+            <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px; padding-left: 20vh; color: aliceblue;cursor:pointer;"onclick="otp(6)">6</button>
+
+        </center>
+        <center style="padding-top: 2vh;">
+            <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px;  color: aliceblue;cursor:pointer;"onclick="otp(7)">7</button>
+            <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px; padding-left: 20vh; color: aliceblue;cursor:pointer;"onclick="otp(8)">8</button>
+            <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px; padding-left: 20vh; color: aliceblue;cursor:pointer;"onclick="otp(9)">9</button>
+
+        </center>
+       <center>
+    <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px; color: aliceblue;cursor:pointer;" onclick="remove()"><i class="fa-solid fa-xmark" style="color: #f4f6fb;"></i></button>
+    <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px; padding-left: 20vh; color: aliceblue;cursor:pointer;"onclick="otp(0)">0</button>
+    <button style="font-size: 5vw; background-color:rgb(246, 92, 92) ;border: 0px; padding-left: 17vh; color: aliceblue;cursor:pointer;"><i class="fa-solid fa-check" style="color: #f0f2f4;"></i></button>
+    </center>
+    </div>
+<script>
+    function otp(value){
+        if(document.getElementsByTagName("input")[0].value==""){
+            document.getElementsByTagName("input")[0].value=value
+        }
+        else if(document.getElementsByTagName("input")[1].value==""){
+            document.getElementsByTagName("input")[1].value=value
+        }
+       else if(document.getElementsByTagName("input")[2].value==""){
+            document.getElementsByTagName("input")[2].value=value
+        }
+        else if(document.getElementsByTagName("input")[3].value==""){
+            document.getElementsByTagName("input")[3].value=value
+        }
+        
+    }
+    function remove(){
+        if(document.getElementsByTagName("input")[3].value!=""){
+            document.getElementsByTagName("input")[3].value=""
+        }
+        else if(document.getElementsByTagName("input")[2].value!=""){
+            document.getElementsByTagName("input")[2].value=""
+        }
+       else if(document.getElementsByTagName("input")[1].value!=""){
+            document.getElementsByTagName("input")[1].value=""
+        }
+        else if(document.getElementsByTagName("input")[0].value!=""){
+            document.getElementsByTagName("input")[0].value=""
+        }
+    }
+</script>
+</body>
+</html>
